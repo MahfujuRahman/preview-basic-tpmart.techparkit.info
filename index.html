@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Advanced TpMart - Tech Park It</title>
+    <!--Icon-->
+   
+    <link rel="icon" href="./assets/picture/favicon.jpg" sizes="32x32" />
+    <link rel="icon" href="./assets/picture/favicon.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./assets/picture/favicon.jpg" />
+
+    <!-- Fonts -->
+
+   
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/custom.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="./assets/fontawesome.min.css" />
+    <!--Swiper css-->
+    <link rel="stylesheet" href="./assets/swiper-bundle.min.css" />
+    <!--Slider css-->
+    <link rel="stylesheet" href="./assets/slick.css" />
+    <link rel="stylesheet" href="./assets/slick-theme.css" />
+    <link rel="stylesheet" href="./assets/3d-slider.css" />
+    <!--Animate css-->
+    <link rel="stylesheet" href="./assets/animate.css" />
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <!--custom css-->
+    <link rel="stylesheet" href="./assets/aiz-core.css" />
+
+    <style>
+        .title{
+            color: rgb(254 67 0);
+        }
+        .section-bg{
+            background-color: #E3FDFD;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="d-flex flex-column min-vh-100" style="overflow-x: hidden">
+        <!--Section Header [Start]-->
+        <header class="header section-header">
+            <!--Nav Content [Start]-->
+            <div class="nav-div">
+                <nav class="navbar navbar-expand-xl" id="header">
+                    <div class="position-relative d-flex justify-content-between flex-grow-1">
+                        <!-- Logo -->
+                        <div class="d-flex justify-content-between flex-grow-1">
+                            <div class="d-flex align-items-center">
+                                <a class="navbar-brand" href="https://techparkit.org/">
+                                    <img src="./assets/picture/tpmart.png" alt="TpMart" style="max-height: 44px !important;">
+                                </a>
+                            </div>
+                            <button class="navbar-toggler" type="button" onclick="openNav()"
+                                style="border: none !important">
+                                <img src="./assets/bar.PNG" alt="" />
+                            </button>
+                        </div>
+                        <!--Nav bar Middle Content-->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                            ">
+                        </div>
+                        <!--Nav bar end Content-->
+                        <div class="navbar-end d-none d-xl-flex align-items-center">
+                            <div class="navbar-item">
+                                <ul class="navbar-nav">
+                                    <!-- Profile -->
+
+                                    <!-- Promo -->
+                                    <li class="nav-item-right">
+                                        <a href="https://www.youtube.com/embed/ZF0MiEyTWgs?si=LxE5G8aOAjYHDqof"
+                                            class="nav-link-right promo play-video">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16">
+                                                <path id="Path_3084" data-name="Path 3084"
+                                                    d="M8,0a8,8,0,1,0,8,8A8,8,0,0,0,8,0ZM6,4l6,4L6,12Z" fill="#ea4335"
+                                                    style="isolation: isolate"></path>
+                                            </svg>
+                                            <span class="ml-2">Promo</span>
+                                        </a>
+                                    </li>
+                                    <!-- Portfolio -->
+                                    <li class="nav-item-right">
+                                        <a target="_blank" href="https://techparkit.org/"
+                                            class="nav-link-right portfolio">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="13.993" height="16"
+                                                viewBox="0 0 13.993 16">
+                                                <path id="Path_2" data-name="Path 2"
+                                                    d="M934.4,1969.733c-.47-.26-1.814-.1-3.43.4a11.339,11.339,0,0,0-5.377,9.344c-.031.109-.308-.014-.364-.048a6.511,6.511,0,0,1-.428-5.224c.119-.2-.27-.441-.339-.372a7.979,7.979,0,0,0-1.11,1.434,6.957,6.957,0,0,0,12.158,6.767c2.163-3.876.156-11.592-1.112-12.3Z"
+                                                    transform="translate(-922.471 -1969.61)" fill="#80b341"
+                                                    style="isolation: isolate"></path>
+                                            </svg>
+                                            <span class="ml-2">Portfolio</span>
+                                        </a>
+                                    </li>
+                                    <!-- Support -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                
+            </div>
+            <!-- Nav Content [End]-->
+
+            <!-- Side Nav [Start]-->
+            <div class="sideNavPanel d-xl-none">
+                <div class="sideNavContent">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-16 fw-400 play-video"
+                                href="https://www.youtube.com/embed/zW6FwRsaxDk">Promo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-16 fw-400" target="_blank"
+                                href="https://techparkit.info">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Side Nav [End]-->
+
+           
+            <!--Baner Content [Start]-->
+            <div class="content" style="
+                background-image: url(./assets/picture/background_banner.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            ">
+                <div class="baner-content">
+                    <h4 class="fs-24 fw-500 wow fadeInDown" style="
+                    line-height: 28px;
+                    letter-spacing: 0.4px;
+                    visibility: visible;
+                    animation-name: fadeInDown;
+                ">
+                        MOST POWERFUL
+                    </h4>
+                    <h1 class="fs-48 fw-800 wow fadeInLeft title" style="
+                        text-transform: inherit;
+                        line-height: 56px;
+                        visibility: visible;
+                        animation-name: fadeInLeft;
+                    ">
+                        Tpmart Advanced Business E-Commerce
+                    </h1>
+                    <h3 class="fs-21 fw-500 wow fadeInUp" style="
+                        text-transform: inherit;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                        line-height: 1.5;
+                        letter-spacing: -0.4px;
+                        visibility: visible;
+                        animation-name: fadeInUp;
+                    ">
+                        An effective platform for becoming an eCommerce business Owner
+                    </h3>
+                </div>
+                <div class="banner-buttons">
+                    <a target="_blank"
+                        href="https://advanced-tpmart.techparkit.info/"
+                        class="wow fadeInUp my-2 btn btn-outline" data-wow-delay=".3s" style="
+                visibility: visible;
+                animation-delay: 0.3s;
+                animation-name: fadeInUp;
+              ">Browse Frontend</a>
+                    <a target="_blank"
+                        href="https://advanced-admin-tpmart.techparkit.info/"
+                        class="wow fadeInUp my-2 btn btn-outline" data-wow-delay=".3s" style="
+                visibility: visible;
+                animation-delay: 0.3s;
+                animation-name: fadeInUp;
+              ">Browse Admin</a>
+                </div>
+                <div class="row justify-content-center" style="margin-top: 40px">
+                    <div class="col-12">
+                        <div class="liquid-img-group-img-container w-100 d-flex flex-column align-items-center justify-content-center">
+                            <div class="liquid-img-group-content content-floated-mid d-flex flex-column align-items-center">
+                                <a href="https://www.youtube.com/embed/98A6tCF6Pa0"
+                                    class="btn btn-naked btn-promo play-video" title="Watch Video">
+                                    <span>
+                                        <span class="btn-icon">
+                                            <svg class="svg-inline--fa fa-play"
+                                                aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 384 512" data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                    d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </a>
+
+                                <div class="mt-4 text-center">
+                                    <span class="fw-600 fs-18 text-white">Watch Promo Video</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Baner Content [End]-->
+        </header>
+        <!--Section Header [End]-->
+
+        <main class="">
+            <!--Section Frontend Design [Start]-->
+            <div class="section-frontend-design title section-bg" style="padding-top:50px">
+                <h1 class="fw-800 fs-40 text-center wow fadeInDown" style="
+              line-height: 44px;
+              letter-spacing: 0px;
+              visibility: visible;
+              animation-name: fadeInDown;
+            ">
+                    Frontend Design
+                </h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <p class="fw-400 fs-17 text-dark-regular text-center wow fadeInUp font-family-2" style="
+                  line-height: 24px;
+                  letter-spacing: 0.2px;
+                  visibility: visible;
+                  animation-name: fadeInUp;
+                ">
+                        A modern, visually appealing storefront designed to elevate your brand and deliver an exceptional shopping experience for your customers.
+                        </p>
+                    </div>
+                </div>
+                <div class="frontend-design-slider">
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper" id="swiper-wrapper-4191dbb5969f39fa" aria-live="off" style="
+                  transition-duration: 1200ms;
+                  transform: translate3d(-2400px, 0px, 0px);
+                ">
+             
+                            <!-- Slides -->
+                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0"
+                                style="width: 945px; margin-right: 15px" role="group" aria-label="1 / 9">
+                                <figure>
+                                    <img src="./assets/picture/header.png" alt="" />
+                                </figure>
+                            </div>
+                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1"
+                                style="width: 945px; margin-right: 15px" role="group" aria-label="2 / 9">
+                                <figure>
+                                    <img src="./assets/picture/video.png" alt="" />
+                                </figure>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2"
+                                style="width: 945px; margin-right: 15px" role="group" aria-label="3 / 9">
+                                <figure>
+                                    <img src="./assets/picture/about.png" alt="" />
+                                </figure>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="3"
+                                style="width: 945px; margin-right: 15px" role="group" aria-label="4 / 9">
+                                <figure>
+                                    <img src="./assets/picture/gallery.png" alt="" />
+                                </figure>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="4"
+                                style="width: 945px; margin-right: 15px" role="group" aria-label="5 / 9">
+                                <figure>
+                                    <img src="./assets/picture/order-1.png" alt="" />
+                                </figure>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="5"
+                                style="width: 945px; margin-right: 15px" role="group" aria-label="6 / 9">
+                                <figure>
+                                    <img src="./assets/picture/order-2.png" alt="" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+                            style="bottom: -50px !important">
+                            <span class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 1"></span><span
+                                class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
+                                role="button" aria-label="Go to slide 2" aria-current="true"></span><span
+                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
+                                role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet"
+                                tabindex="0" role="button" aria-label="Go to slide 5"></span><span
+                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0"
+                                role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet"
+                                tabindex="0" role="button" aria-label="Go to slide 8"></span><span
+                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                aria-label="Go to slide 9"></span>
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </div>
+            <!--Section Frontend Design [End]-->
+
+            <!--Section Core Features Design [Strat]-->
+            <div class="section-core-features title section-bg" style="padding-bottom:360px;" >
+                <h1 class="fw-800 fs-40 text-center wow fadeInDown" style="
+              line-height: 44px;
+              letter-spacing: 0px;
+              visibility: visible;
+              animation-name: fadeInDown;
+            ">
+                    Core Features
+                </h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <p class="fw-400 fs-17 text-dark-regular text-center wow fadeInUp font-family-2" style="
+                            line-height: 24px;
+                            letter-spacing: 0.2px;
+                            visibility: visible;
+                            animation-name: fadeInUp;
+                        ">
+                            The standard multivendor system has distinctive features and a beautifully styled UI.
+                        </p>
+                    </div>
+                </div>
+                <div class="container py-5">
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle shadow-sm" style="border-radius: 8px; overflow: hidden;">
+                            <thead class="table-light text-center" style="background-color: #f8f9fa;">
+                                <tr style="font-size: 1.05rem;">
+                                <th class="fw-semibold" style="width: 25%; color: #111827;">Module</th>
+                                <th class="fw-semibold" style="color: #111827;">Key Features</th>
+                                </tr>
+                            </thead>
+                            <tbody style="font-size: 1rem; color: #374151;">
+                                
+                                <!-- Dashboard Module -->
+                                <tr>
+                                    <td class="fw-medium">1. Dashboard's</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                                <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                                E-Commerce Dashboard
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                                <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                                CRM Dashboard
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                                <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                                Accounts Dashboard
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <!-- Ecommerce Module -->
+                                <tr>
+                                    <td class="fw-medium">2. E-Commerce</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                                <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                                Config
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                                <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                                Category
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                                <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                                Subcategory
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Child Category
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Manage Products
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Manage Orders
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Promo Codes
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Push Notification
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> System
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Customer's Wishlist
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Delivery Charges
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Upazila & Thana
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Payment History
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i> Generate Report
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <!-- Inventory Module -->
+                                <tr>
+                                    <td class="fw-medium">3. Inventory</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Product Warehouse
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Warehouse Room
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Room Cartoon
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Supplier Src Type
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Product Supplier
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Customer Src Type
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Customers
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Product Purchase
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+
+
+                                <!-- Accounts Module -->
+                                <tr>
+                                    <td class="fw-medium">4. Accounts</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Payment Type
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Expense Category
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Account
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Expense
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Deposit
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Reports
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+
+                                <!-- CRM Module -->
+                                <tr>
+                                    <td class="fw-medium">5. CRM</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                           <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Customer Src Type
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Customer Category
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Customer
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Contact History
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            E-Customer
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Next Date Contact
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Support Ticket
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Contact Request
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Subscribed Users
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                </tr>
+
+
+                                <!-- User Role Permission Module -->
+                                <tr>
+                                    <td class="fw-medium">6. User Role Permission</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            System Users
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Permission Routes
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            User Roles
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Assign Role Permission
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <!-- Website Config Module -->
+                                <tr>
+                                    <td class="fw-medium">7. Website Config</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            General Info
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Website Theme Color
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Social Media Links
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Home Page SEO
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Custom CSS & JS
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Social & Chat Scripts
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <!-- Content Management Module -->
+                                <tr>
+                                    <td class="fw-medium">8. Content Management</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                           <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Sliders & Banners
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Testimonials
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Manage Blogs
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Terms & Policies
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Custom Pages
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Outlet
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Video Gallery
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            About Us
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            FAQ's
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+
+                                <!-- Download & Backup Module -->
+                                <tr>
+                                    <td class="fw-medium">9. Download & Backup</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Database Backup
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Product Images Backup
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            User Images Backup
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Banner Images Backup
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Category Icon Backup
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Subcategory Backup
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Flag Icon Backup
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Ticket Files Backup
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Blog Files Backup
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Other Images Backup
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <!-- Bonus Module -->
+                                <tr>
+                                    <td class="fw-medium">10. Bonus</td>
+                                    <td>
+                                        <ul class="mb-0 ps-3" style="list-style-type: none;">
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Demo Products
+                                            </li>
+                                            <li style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="fa-solid fa-circle-check" style="color: #34a853;"></i>
+                                            Clear Cache
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <!--Section Core Features Design [End]-->
+
+            <!--Section Product Posting [Start]-->
+            <div class="product-posting section-bg">
+                <div class="container text-center">
+                    <img class="product-posting-img" src="./assets/gqAyitvlJyN0Si05DVMsXZTGEsdZAmO4ZCc1Yn8b.webp" alt=""
+                        style="width: 80%; margin: -230px 0 60px" />
+                            <h1 class="fw-800 fs-40 text-center wow fadeInDown title" style="
+                        line-height: 44px;
+                        letter-spacing: 0px;
+                        visibility: visible;
+                        animation-name: fadeInDown;
+                    ">
+                        What will you get in Product Posting?
+                    </h1>
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 mt-2">
+                            <p class="fw-400 fs-17 text-dark-regular text-center wow fadeInUp font-family-2" style="
+                    line-height: 1.5;
+                    letter-spacing: 0.7px;
+                    visibility: visible;
+                    animation-name: fadeInUp;
+                  ">
+                                Experience effortless product posting with our intuitive and streamlined interface, designed for both administrators and sellers. Easily add, manage, and showcase products with advanced options, ensuring a smooth and efficient workflow that meets the highest industry standards.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="posting-instruction mt-3">
+                        <div class="row gutters-16">
+                            <div class="col-lg-3 col-md-6 py-3">
+                                <div class="posting-instruction-details text-center p-4 bg-white">
+                                    <img src="./assets/zTnBbrUd2ZizvZsh3RNWTYYTYQQtV6YtDiAUhhcI.png" alt="" />
+                                    <p class="fs-14 fw-400 text-dark-medium mt-3 mb-0 font-family-2"
+                                        style="line-height: 1.5; letter-spacing: 0.7px">
+                                        Products Variant
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 py-3">
+                                <div class="posting-instruction-details text-center p-4 bg-white">
+                                    <img src="./assets/2RrIMEBodrlyDYTV0jX5rlQzyB7TKeMwe05An3ok.png" alt="" />
+                                    <p class="fs-14 fw-400 text-dark-medium mt-3 mb-0 font-family-2"
+                                        style="line-height: 1.5; letter-spacing: 0.7px">
+                                        Featured Product
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 py-3">
+                                <div class="posting-instruction-details text-center p-4 bg-white">
+                                    <img src="./assets/heG5ndBzSWgSsrtCk4W7DzUw6fKAP1e3TC6eN3DR.png" alt="" />
+                                    <p class="fs-14 fw-400 text-dark-medium mt-3 mb-0 font-family-2"
+                                        style="line-height: 1.5; letter-spacing: 0.7px">
+                                        Product Wishlist
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 py-3">
+                                <div class="posting-instruction-details text-center p-4 bg-white">
+                                    <img src="./assets/39IJgLcMKB8GvoVoFtrvfA5HUPl43RHn9pvjj4PQ.png" alt="" />
+                                    <p class="fs-14 fw-400 text-dark-medium mt-3 mb-0 font-family-2"
+                                        style="line-height: 1.5; letter-spacing: 0.7px">
+                                        Products Flash Deal
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 py-3">
+                                <div class="posting-instruction-details text-center p-4 bg-white">
+                                    <img src="./assets/fdBEiEiGsdu8RetZenN1vaOgpLC1dNRJj09qhpGm.png" alt="" />
+                                    <p class="fs-14 fw-400 text-dark-medium mt-3 mb-0 font-family-2"
+                                        style="line-height: 1.5; letter-spacing: 0.7px">
+                                        Today's Deal
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 py-3">
+                                <div class="posting-instruction-details text-center p-4 bg-white">
+                                    <img src="./assets/s940G2LITTmgHyEvXdmK6Zm03VXxe1AugqVWtjG7.png" alt="" />
+                                    <p class="fs-14 fw-400 text-dark-medium mt-3 mb-0 font-family-2"
+                                        style="line-height: 1.5; letter-spacing: 0.7px">
+                                        Product Compare
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 py-3">
+                                <div class="posting-instruction-details text-center p-4 bg-white">
+                                    <img src="./assets/Xd7Y120AootSdTRy6kNo6WLaTJV0pTWqRYFDU94f.png" alt="" />
+                                    <p class="fs-14 fw-400 text-dark-medium mt-3 mb-0 font-family-2"
+                                        style="line-height: 1.5; letter-spacing: 0.7px">
+                                        Discounted Product
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 py-3">
+                                <div class="posting-instruction-details text-center p-4 bg-white">
+                                    <img src="./assets/qawMukFDo9qQvjZLkAbkjn7Q5M7mXM3nemEy3Fs8.png" alt="" />
+                                    <p class="fs-14 fw-400 text-dark-medium mt-3 mb-0 font-family-2"
+                                        style="line-height: 1.5; letter-spacing: 0.7px">
+                                        Free/Flat Shipping
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Section Product Posting [End]-->
+
+            <!--Section Payment Getway [Start]-->
+            <div class="section-payment-getway">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7">
+                            <h1 class="fw-800 fs-40 text-center wow fadeInDown title" style="
+                                line-height: 44px;
+                                letter-spacing: 0px;
+                                padding: 0px 12%;
+                                visibility: visible;
+                                animation-name: fadeInDown;
+                            ">
+                                Multiple Payment Gateways
+                            </h1>
+                            <p class="fw-400 fs-17 text-white text-center wow fadeInUp mt-4 font-family-2" style="
+                                line-height: 25px;
+                                letter-spacing: -0.4px;
+                                visibility: visible;
+                                animation-name: fadeInUp;
+                            ">
+                                Business eCommerce offers a variety of payment methods, allowing you to receive payments from your customers through the gateways that best suit your needs.
+                            </p>
+                        </div>
+                    </div>
+                   
+                    <div class="row justify-content-center py-md-2" style="margin-top: 60px">
+                        <div class="col-lg-2 col-md-4 col-sm-6 py-2">
+                            <div class="img-div w-100 overflow-hidden" style="border-radius: 8px">
+                                <img src="./assets/GJKF76fxNQBvTBfvgkFePvzzGAiMiaNN6YrvaikC.png" alt="" class="w-100" />
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-2 col-md-4 col-sm-6 py-2">
+                            <div class="img-div w-100 overflow-hidden" style="border-radius: 8px">
+                                <img src="./assets/aLxknBWhEu8o0lxqJkOYDdyN7oSCwObDDMnwilmH.png" alt="" class="w-100" />
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 py-2">
+                            <div class="img-div w-100 overflow-hidden" style="border-radius: 8px">
+                                <img src="./assets/ShvOlAkmgdNzydTlTMRrnnY0EPukUBWiHvVpk3V2.png" alt="" class="w-100" />
+                            </div>
+                        </div> -->
+                        <div class="col-lg-2 col-md-4 col-sm-6 py-2">
+                            <div class="img-div w-100 overflow-hidden" style="border-radius: 8px">
+                                <img src="./assets/lz8Jz5liB3pQWVmNkld2ExWmzgwsvex7A6EBf1to.png" alt="" class="w-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-0 m-0 text-center">
+                        <small style="
+                        font-weight: normal;
+                        font-size: 14px;
+                        letter-spacing: 0em;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #ea4335;
+                        ">*Additional payment gateways can be integrated upon request.</small>
+                    </div>
+                </div>
+            </div>
+            <!--Section Payment Getway [End]-->
+
+            <!--Section Product Details [Start]-->
+            <div class="section-product-details section-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 order-md-1 d-flex align-items-center">
+                            <div>
+                                <h1 class="fw-800 fs-40 text-center text-md-left wow fadeInDown lh-1-2 title"
+                                    style="
+                      letter-spacing: 0px;
+                      visibility: visible;
+                      animation-name: fadeInDown;
+                    ">
+                                    Getting Started with Business eCommerce
+                                </h1>
+                                <p class="fw-400 fs-17 mt-4 text-dark-regular text-center text-md-left wow fadeInUp font-family-2 lh-1-6"
+                                    style="
+                      letter-spacing: -0.4px;
+                      visibility: visible;
+                      animation-name: fadeInUp;
+                    ">
+                                    Getting started with Business eCommerce is simple and efficient. 
+                                    It provides a user-friendly interface for sellers to set up their 
+                                    shop, manage products, and track orders seamlessly. The platform 
+                                    ensures a smooth experience for both sellers and customers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 d-flex wow fadeInLeft"
+                            style="visibility: visible; animation-name: fadeInLeft">
+                            <img style="mix-blend-mode: multiply;" src="./assets/CROr02JUU48imCHw6sHKymULooZgYRHizj6R2EMS.webp" alt="" class="w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Section Product Details [End]-->
+
+            <!--Section Product Details [Start]-->
+            <div class="section-product-details section-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <div>
+                                <h1 class="fw-800 fs-40 text-center text-md-right wow fadeInDown lh-1-2 title"
+                                    style="
+                      letter-spacing: 0px;
+                      visibility: visible;
+                      animation-name: fadeInDown;
+                    ">
+                                    Order tracking System
+                                </h1>
+                                <p class="fw-400 fs-17 text-dark-regular text-center text-md-right mt-4 wow fadeInUp font-family-2 lh-1-6"
+                                    style="
+                      letter-spacing: -0.4px;
+                      visibility: visible;
+                      animation-name: fadeInUp;
+                    ">
+                             With this amazing order monitoring system from Business eCommerce, you can inform your clients about the status of their goods and when they will be delivered.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 d-flex wow fadeInRight"
+                            style="visibility: visible; animation-name: fadeInRight">
+                            <img style="mix-blend-mode: multiply;" src="./assets/ibFVpJR2kgMmyf21hrmeSkW22L0435a4kZi8UBLB.png" alt="" class="w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Section Product Details [End]-->
+
+            <!--Section Product Details [Start]-->
+            <div class="section-product-details section-bg">
+                <div class="container">
+                    <div class="">
+                        <h1 class="fw-800 fs-40 text-center wow fadeInDown lh-1-2 title" style="
+                  letter-spacing: 0px;
+                  visibility: visible;
+                  animation-name: fadeInDown;
+                ">
+                            Pick Up Point
+                        </h1>
+                        <div class="row justify-content-center wow fadeInUp"
+                            style="visibility: visible; animation-name: fadeInUp">
+                            <div class="col-md-8 text-center">
+                                <p class="fw-400 fs-17 text-center mt-2 font-family-2 lh-1-6"
+                                    style="letter-spacing: -0.4px">
+                                    The Pickup Point feature in our eCommerce CMS offers a comprehensive solution for retailers with multiple locations, distribution centers, or pickup sites. This functionality enables customers to conveniently collect their purchased items from designated pickup points.
+                                </p>
+                            </div>
+                        </div>
+                        <img style="mix-blend-mode: multiply;" src="./assets/w3ohmC3CdYRaAOPYcJUEhzWTrRkEuRxYGorTAs9F.png" alt="" class="w-100 mt-4" />
+                    </div>
+                </div>
+            </div>
+            <!--Section Product Details [End]-->
+
+            <!--Section Product Details [Start]-->
+            <div class="section-product-details section-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <div>
+                                <h1 class="fw-800 fs-40 text-center text-md-right wow fadeInDown lh-1-2 title"
+                                    style="
+                      letter-spacing: 0px;
+                      visibility: visible;
+                      animation-name: fadeInDown;
+                    ">
+                                    Suggestive Search
+                                </h1>
+                                <p class="fw-400 fs-17 text-dark-regular text-center text-md-right mt-4 wow fadeInUp font-family-2 lh-1-6"
+                                    style="
+                      letter-spacing: -0.4px;
+                      visibility: visible;
+                      animation-name: fadeInUp;
+                    ">
+                                    Suggestive Live Search is an advanced feature of
+                                    eCommerce CMS that enhances the search functionality of your website!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 d-flex wow fadeInRight"
+                            style="visibility: visible; animation-name: fadeInRight">
+                            <img style="mix-blend-mode: multiply;" src="./assets/jZTIKYZbiC2S2zctIBM151vYFaPrCFuewWHqL0Pu.webp" alt="" class="w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Section Product Details [End]-->
+
+            <!--Section Product Details [Start]-->
+            <div class="section-product-details section-bg">
+                <div class="container">
+                    <div class="">
+                        <h1 class="fw-800 fs-40 text-center wow fadeInDown lh-1-2 title" style="
+                  letter-spacing: 0px;
+                  visibility: visible;
+                  animation-name: fadeInDown;
+                ">
+                            Responsive Design
+                        </h1>
+                        <div class="row justify-content-center wow fadeInUp"
+                            style="visibility: visible; animation-name: fadeInUp">
+                            <div class="col-md-8 text-center">
+                                <p class="fw-400 fs-17 text-center mt-2 font-family-2 lh-1-6"
+                                    style="letter-spacing: -0.4px">
+                                    Business eCommerce is a robust eCommerce solution featuring a fully responsive design and seamless browser compatibility.
+                                </p>
+                            </div>
+                        </div>
+                        <img style="mix-blend-mode: multiply;" src="./assets/RVBby4ahayfliHgVZTFATrnlcbe89L1gaFyiY1eA.webp" alt="" class="w-100 mt-4" />
+                    </div>
+                </div>
+            </div>
+            <!--Section Product Details [End]-->
+
+        </main>
+
+        <!--Section footer [Start]-->
+        <div class="section-footer">
+            <div class="container">
+                <p class="description">
+                    Welcome to Tech Park It. Tech Park It is a leading IT company providing web solutions of any complexity to clients worldwide. We are known for delivering reliable, timely, and cost-effective services using the latest technologies. Our solutions are fast, user-friendly, and tailored to meet client needs. Our clients range from startups to large enterprises who require professional IT services to grow their business, improve communication, and streamline operations.
+                </p>
+                <p class="description">
+                    Every item you purchase from us comes with a support. This support
+                    does not includes installation.
+                </p>
+                <hr style="border-top: 1px solid #424242" />
+            
+                
+                <p class="footer-title">Follow us</p>
+                <div class="d-block d-flex">
+                    <div class="social mr-3">
+                        <a href="https://www.facebook.com/TechParkITorg/" target="_blank"
+                            rel="noopener noreferrer"><svg class="svg-inline--fa fa-facebook-f facebook"
+                                aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z">
+                                </path>
+                            </svg><!-- <i class="fa-brands fa-facebook-f facebook"></i> Font Awesome fontawesome.com --></a>
+                    </div>
+                    <div class="social mr-3">
+                        <a href="https://www.linkedin.com/company/techparkit?trk=companies_directory" target="_blank"
+                            rel="noopener noreferrer"><svg class="svg-inline--fa fa-linkedin-in linkedin"
+                                aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z">
+                                </path>
+                            </svg><!-- <i class="fa-brands fa-linkedin-in linkedin"></i> Font Awesome fontawesome.com --></a>
+                    </div>
+                    <div class="social mr-3">
+                        <a href="https://www.youtube.com/@TechParkITOrg" target="_blank"
+                            rel="noopener noreferrer"><svg class="svg-inline--fa fa-youtube youtube" aria-hidden="true"
+                                focusable="false" data-prefix="fab" data-icon="youtube" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M549.7 124.1c-6.281-23.65-24.79-42.28-48.28-48.6C458.8 64 288 64 288 64S117.2 64 74.63 75.49c-23.5 6.322-42 24.95-48.28 48.6-11.41 42.87-11.41 132.3-11.41 132.3s0 89.44 11.41 132.3c6.281 23.65 24.79 41.5 48.28 47.82C117.2 448 288 448 288 448s170.8 0 213.4-11.49c23.5-6.321 42-24.17 48.28-47.82 11.41-42.87 11.41-132.3 11.41-132.3s0-89.44-11.41-132.3zm-317.5 213.5V175.2l142.7 81.21-142.7 81.2z">
+                                </path>
+                            </svg><!-- <i class="fa-brands fa-youtube youtube"></i> Font Awesome fontawesome.com --></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="
+            border-top: 1px solid #424242;
+            margin-top: 1.25rem;
+            margin-bottom: 1.5rem;
+          " />
+            <div class="container">
+                <p class="footer-title">
+                    Copyright © 2025 Tech Park It Limited. All rights reserved.
+                </p>
+            </div>
+        </div>
+        <!--Section footer [End]-->
+
+        <!-- Back to top Button [Start]-->
+        <button class="toTopBtn" title="Go to top" style="display: none">
+            <svg class="svg-inline--fa fa-chevron-up" aria-hidden="true" focusable="false" data-prefix="fas"
+                data-icon="chevron-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                data-fa-i2svg="">
+                <path fill="currentColor"
+                    d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z">
+                </path>
+            </svg><!-- <i class="fa-solid fa-chevron-up"></i> Font Awesome fontawesome.com -->
+        </button>
+        <!-- Back to top Button [Start]-->
+
+        <!-- Video Play [Start]-->
+        <div id="video-overlay" class="video-overlay">
+            <a class="video-overlay-close" style="text-decoration: none">×</a>
+        </div>
+        <!-- Video Play [End]-->
+    </div>
+
+    <!-- Scripts -->
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="./assets/jquery-3.6.0.min.js.download"></script>
+    <script src="./assets/bootstrap.bundle.min.js.download"></script>
+    <!-- Swiper js-->
+    <script src="./assets/swiper-bundle.min.js.download"></script>
+    <!--Font Awesome-->
+    <script src="./assets/fontawesome.all.min.js.download"></script>
+    <!-- Slider js-->
+    <script src="./assets/slick.js.download"></script>
+    <script src="./assets/3d-slider.js.download"></script>
+    <script src="./assets/carousel.js.download"></script>
+    <!-- WOW js-->
+    <script src="./assets/wow.min.js.download"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Counter js-->
+    <script src="./assets/multi-animated-counter.js.download"></script>
+    <!-- Custom js-->
+    <script src="./assets/aiz-core.js.download"></script>
+
+    <script>
+        (function () {
+            function c() {
+                var b = a.contentDocument || a.contentWindow.document;
+                if (b) {
+                    var d = b.createElement("script");
+                    d.innerHTML =
+                        "window.__CF$cv$params={r:'92c84811df5ca475',t:'MTc0NDAxNTg2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName("head")[0].appendChild(d);
+                }
+            }
+            if (document.body) {
+                var a = document.createElement("iframe");
+                a.height = 1;
+                a.width = 1;
+                a.style.position = "absolute";
+                a.style.top = 0;
+                a.style.left = 0;
+                a.style.border = "none";
+                a.style.visibility = "hidden";
+                document.body.appendChild(a);
+                if ("loading" !== document.readyState) c();
+                else if (window.addEventListener)
+                    document.addEventListener("DOMContentLoaded", c);
+                else {
+                    var e = document.onreadystatechange || function () { };
+                    document.onreadystatechange = function (b) {
+                        e(b);
+                        "loading" !== document.readyState &&
+                            ((document.onreadystatechange = e), c());
+                    };
+                }
+            }
+        })();
+    </script>
+    <iframe height="1" width="1" style="
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border: none;
+        visibility: hidden;
+      " src="./assets/saved_resource.html"></iframe>
+</body>
+
+</html>
